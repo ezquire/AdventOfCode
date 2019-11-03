@@ -36,8 +36,8 @@ def get_minute(d, guard):
     max_minute = float("-inf")
     for id, minutes in d.items():
         if id[0] == guard:
-            if max_minute < d[id]:
-                max_minute = d[id]
+            if max_minute < minutes:
+                max_minute = minutes
                 minute = id[1]
     return minute
 
