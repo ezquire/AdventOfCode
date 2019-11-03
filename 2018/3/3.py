@@ -2,7 +2,7 @@ import re
 
 board = [[0]*1000 for _ in range(1000)]
 
-fp = open("input3.txt", "r")
+fp = open("3.in", "r")
 
 def processLine(line):
     rect_re = re.compile("\\d+")

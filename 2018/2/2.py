@@ -1,6 +1,6 @@
 from collections import Counter
 
-fp = open("input2.txt", "r")
+fp = open("2.in", "r")
 
 def checksum(fp):
     two = 0

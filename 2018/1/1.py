@@ -1,4 +1,4 @@
-fp = open("input1.txt", "r")
+fp = open("1.in", "r")
 drift = 0
 for line in iter(fp.readline, ''):
         drift += int(line)
