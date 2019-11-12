@@ -16,11 +16,15 @@ for i in range(max_x):
                     break
                 grid[i, j] = n
 
+print(grid)
+
 s = set([-1])
 s = s.union(set(grid[x, max_y-1] for x in range(max_x)))
 s = s.union(set(grid[x,       0] for x in range(max_x)))
 s = s.union(set(grid[max_x-1, y] for y in range(max_y)))
 s = s.union(set(grid[      0, y] for y in range(max_y)))
 
-print (next(i[1] for i in Counter(grid.values()).most_common() if i[0] not in s))
-print (sum(sum(abs(i-k)+abs(j-l) for k, l in data) < 10000 for i in range(max_x) for j in range(max_y)))
+print(s)
+
+# print (next(i[1] for i in Counter(grid.values()).most_common() if i[0] not in s))
+# print (sum(sum(abs(i-k)+abs(j-l) for k, l in data) < 10000 for i in range(max_x) for j in range(max_y)))
